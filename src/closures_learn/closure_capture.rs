@@ -7,7 +7,7 @@ fn main() {
 
     let print = || println!("`color`: {}", color);
 
-    // Call the closure using the borrow.
+    // Call the closure using the borrowing.
     print();
 
     // `color` can be borrowed immutably again, because the closure only holds
@@ -24,7 +24,7 @@ fn main() {
         println!("`count`: {}", count);
     };
 
-    // Call the closure using a mutable borrow.
+    // Call the closure using a mutable borrowing.
     inc();
 
     inc();
